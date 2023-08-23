@@ -1,3 +1,6 @@
+https://github.com/chinks-2310/namaste-react/tree/main/Assignments  (some one repisitory code)
+
+
 What is Emmet?
 Emmet generates the code inside VS Code.
 Emmet is a set of plug-ins for vs code which allows high speed coding and editing in HTML.
