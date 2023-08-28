@@ -1,3 +1,68 @@
-#heading{
-    color: red;
+.header {
+ display: flex;
+ justify-content: space-between;
+ border: 5px solid white;
+ padding: 5px;
+}
+.logoimg {
+ width: 60px;
+}
+.nav-item > ul {
+    display: flex;
+    justify-content: left;
+    list-style-type: none;
+    
+}
+.nav-item > ul > li {
+    margin: 5px;
+    padding: 5px;
+    
+}
+.body{
+    margin: 10px 35px ;
+}
+.cardcontainer{
+    margin: 5px;
+    width: 300px;
+    
+    
+    background-color: burlywood;
+  
+}
+.cardcontainer:hover{
+    cursor: pointer;
+    border: 5px solid;
+}
+
+.food{
+    height: 100px;
+    
+    width: 200px
+    
+    
+    
+}
+.restarent{
+    
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.cardcontainers{
+    display: flex;
+    flex-wrap: wrap;
+    
+}
+.shimmercard{
+    width: 300px;
+    height: 300px;
+    margin :10px;
+  
+    background-color: lightgrey;
+}
+.searchdiv{
+ padding: 10px;
+}
+.searchbutton{
+    margin-right: 10px;
 }

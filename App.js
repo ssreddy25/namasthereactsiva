@@ -1,31 +1,55 @@
-/**
- * <div id="parent">
- *     <div id="child">
- *       <h1>hello world</h1>
- *       <h2>wlcome react corse</h2>
- *  </div>
- * <div id="child2">
- *       <h1>hello world</h1>
- *       <h2>wlcome react corse</h2>
- *  </div>
- * </div>
- * 
- * 
- * 
- * 
- * 
- */
-       const heading=React.createElement("div",{id:"parent"},[
-       React.createElement("div" ,{id:"child"},[
-       React.createElement("h1",{},"hello world"),
-       React.createElement("h2",{},"wlcome to react")]),
-       React.createElement("div" ,{id:"child2"},[
-        React.createElement("h1",{},"hello world"),
-        React.createElement("h2",{},"wlcome to react")])
-       
-       ]);
+import React from "react";
+import ReactDOM from "react-dom/client";
 
-/**const heading =React.createElement("h1",{id:"heading"},"welcom to react course ");*/
-   console.log(heading);
-          const root1=ReactDOM.createRoot(document.getElementById("root"))
-          root1.render(heading);
+           //react element
+      // const heading=React.createElement("div",{id:"parent"},"i am siva sankar reddy")
+
+      //jsx
+           const heading =(
+               <div>
+           <h1 className="siva">siva sankar reddy</h1>
+           <h2 className="sian">siva sankar reddy</h2>
+           </div>
+           );
+
+           const Title =()=>{
+              return <h1>this is title component</h1>
+           };
+           const HeadingComponent1 = ()=>{
+            
+           return <div>
+               
+               <h1>this a function componet heding</h1>
+               <h2>this like java script function</h2>
+            </div>
+          };
+           const element = (
+            <div>
+               {<Title></Title>}
+               {<HeadingComponent1/>}
+               {heading}
+              <h1>Hello!</h1>
+              <h2>Good to see you here.</h2>
+            </div>
+          );
+  
+          //react component
+            const name ='siva sankar reddy';
+         
+         const HeaderComponent = ()=>{
+            
+               return (<div>
+                  <h1>this image</h1>
+                 <div>
+                  frist name:<input type="search" className="in"placeholder="enter your name"/>
+                  </div>
+               </div>
+               )
+            
+         };
+            
+          
+           
+
+          const root=ReactDOM.createRoot(document.getElementById("root"));
+          root.render(<HeaderComponent/>);
